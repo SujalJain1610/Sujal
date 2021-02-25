@@ -111,7 +111,7 @@ app.get('/orders',(req,res) => {
 //connection with mongo serer
 MongoClient.connect(mongourl,(err,connection) => {
   if(err) console.log(err);
-  db = connection.db('edurekinternship');
+  db = connection.db('myFirstDatabase');
 
   app.listen(port,(err) => {
     if(err) throw err;
